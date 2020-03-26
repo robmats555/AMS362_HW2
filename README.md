@@ -1,5 +1,5 @@
 The requirements to run the Strassen program are numpy and pandas for Python.
-The requirements to run the Naive program are a compiler for C++ and <iostream>, <random>, <chrono>, and <fstream> (Those should already be there, but just for thoroughness)
+The requirements to run the Naive program are a compiler for C++ and iostream, random, chrono, and fstream (Those should already be there, but just for thoroughness)
 
 # Problem #1
 
