@@ -60,3 +60,39 @@ On a 2x2 matrix there are 7 multiplications done and then each recursive call re
 
 ** numa(x) and numm(x) represent the number of additions and multiplications given x rows and x columns done by numpy <br/>
 
+# Problem #2
+
+## Setup
+In the second problem we are tasked with plotting daily case numbers of coronavirus over a 90 day period where the percentage of new cases is determined by a normal random variable, whose mean and standard deviation were previously provided. 
+
+## Algorithm Description (Point Generation):
+Points were created using the Box-Muller method to turn uniformly distributed points into normally distributed points. Then another uniform distribution (0,1] was used to determine which of the two points was returned by the generating function. If the number fell below 0.5 then the number produced by the cosine version was used, otherwise the sine version was used. 
+
+## Pseudocode (Point Generation):
+    def point_generator(mean,standard_deviation):
+        u1,u2 = generate two uniform random variables
+        g1,g2 = apply box muller transform on them
+        z1,z2 = multiply g1 and g2 by standard deviation and add mean
+        
+        if new uniform random variable (0,1] < 0.5:
+            return z1
+        else 
+            return z2
+
+## Algorithm Description (Interpolation):
+I used points 1, 9, 18, 27, 36, and 45 because I wanted the curve to fit better than if 1 wasn't included. I then used the method of solving the system of equations, as shown in the image below, in order to find the coefficients of the function. 
+
+<img src="interpolation_method.PNG" width=500>
+
+## Pseudocode (Interpolation):
+    def generate_interpolation_points(cases):
+        X = create matrix of terms raised to increasing powers
+        y = vector of case values
+        a = solve Xa = y using numpy
+        plot interpolation curve using t (1 to 90) and 'a' coefficients
+
+## Algorithm Description (Curve Fitting):
+
+## Pseudocode (Curve Fitting):
+
+## Answer:
