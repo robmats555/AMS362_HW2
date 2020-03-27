@@ -95,7 +95,7 @@ I used points 1, 9, 18, 27, 36, and 45 because I wanted the curve to fit better 
 ## Algorithm Description (Curve Fitting):
 In order to find an exponential fit, the log of the dependent variable was taken. Then the minimum of the least squares was found to get the coefficients a and b for what would be a linear set of points. Then exp(a) was taken in order to convert the coefficent back for the resultant exponential curve. This process is shown in the image below that was taken from Wolfram.
 
-<img src="fitting_method.PNG" width=500>
+<img src="fitting_method.PNG" width=700>
 ## Pseudocode (Curve Fitting):
     def generate_fit(cases):
         t = a range of 45 to 90
