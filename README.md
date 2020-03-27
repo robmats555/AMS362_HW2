@@ -1,5 +1,6 @@
-The requirements to run the Strassen program are numpy and pandas for Python.
-The requirements to run the Naive program are a compiler for C++ and iostream, random, chrono, and fstream (Those should already be there, but just for thoroughness)
+The requirements to run the Strassen.py file are numpy and pandas.
+The requirements to compile the Naive.cpp file are a compiler for C++ and iostream, random, chrono, and fstream (Those should already be there, but just for thoroughness). 
+The requirements to run the CoronaCases.py program are matplotlib, numpy, random, and math libraries.
 
 # Problem #1
 
@@ -106,6 +107,6 @@ In order to find an exponential fit, the log of the dependent variable was taken
 ## Answer:
 The graph is shown in the image below. Obviously, the fitting could've been better, but the interpolation was certainly satisfactorily.
 
-<img src="corona_cases_plot.PNG" width=500>
+<img src="corona_cases_plot.png" width=500>
 
 
