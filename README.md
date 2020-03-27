@@ -1,6 +1,6 @@
-The requirements to run the Strassen.py file are numpy and pandas.
-The requirements to compile the Naive.cpp file are a compiler for C++ and iostream, random, chrono, and fstream (Those should already be there, but just for thoroughness). 
-The requirements to run the CoronaCases.py program are matplotlib, numpy, random, and math libraries.
+The requirements to run the Strassen.py file are numpy and pandas. <br/>
+The requirements to compile the Naive.cpp file are a compiler for C++ and iostream, random, chrono, and fstream (Those should already be there, but just for thoroughness). <br/>
+The requirements to run the CoronaCases.py program are matplotlib, numpy, random, and math libraries. <br/>
 
 # Problem #1
 
