@@ -8,7 +8,7 @@ In the first problem, we are asked to implement the naive and Strassen method of
 
 
 ## Algorithm Description: Naive Method
-The naive method requires a nested nested for loop. If the two matrices are X and Y, the algorithm iterates through the rows of X, then the columns of Y, and then the rows of Y. This simulates how one row of X multiples a column of Y and so forth to do the multiplication. The algorithm then deposits the result in a csv (naive-10 for 2^10 x 2^10 multiplication and naive-12) that is in the same directory. (I did this one in C++ because the Python version takes significantly longer) 
+The naive method requires a nested nested for loop. If the two matrices are X and Y, the algorithm iterates through the rows of X, then the columns of Y, and then the rows of Y. This simulates how one row of X multiples a column of Y and so forth to do the multiplication. The algorithm then deposits the result in a csv (naive-10 for 2^10 x 2^10 multiplication and naive-12) that is in the same directory. (I did this one in C++ because the Python version takes significantly longer and the 2^12 x 2^12 takes a very long time still.) 
 
 ## Algorithm Description: Strassen Method
 A recursive algorithm is used for Strassen. As professor Deng said we can stop the algorithm after at least three levels so I use the built in numpy matrix multiplier once the dimensions of the inputted matrix are 2^7 x 2^7 as a base case. Otherwise, I split the matrix into four pieces and then apply the additions and subtractions to it as shown below. I then put the results in a csv (strassen-10 and strassen-12). I also put the default numpy multiplication results in csvs (default-10 and default-12) as a comparison. 
@@ -92,7 +92,20 @@ I used points 1, 9, 18, 27, 36, and 45 because I wanted the curve to fit better 
         plot interpolation curve using t (1 to 90) and 'a' coefficients
 
 ## Algorithm Description (Curve Fitting):
+In order to find an exponential fit, the log of the dependent variable was taken. Then the minimum of the least squares was found to get the coefficients a and b for what would be a linear set of points. Then exp(a) was taken in order to convert the coefficent back for the resultant exponential curve. This process is shown in the image below that was taken from Wolfram.
 
+<img src="fitting_method.PNG" width=500>
 ## Pseudocode (Curve Fitting):
-
+    def generate_fit(cases):
+        t = a range of 45 to 90
+        y = cases
+        a, b = Use equations from image above to generate coefficients
+        a = exp(a)
+        plot(ae^bt)
+        
 ## Answer:
+The graph is shown in the image below. Obviously, the fitting could've been better, but the interpolation was certainly satisfactorily.
+
+<img src="corona_cases_plot.PNG" width=500>
+
+
