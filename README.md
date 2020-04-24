@@ -105,7 +105,7 @@ In order to find an exponential fit, the log of the dependent variable was taken
         plot(ae^bt)
         
 ## Answer:
-The graph is shown in the image below. Obviously, the fitting could've been better, but the interpolation was certainly satisfactorily.
+The graph is shown in the image below. Obviously, the fitting could've been better, but the interpolation was certainly satisfactory.
 
 <img src="corona_cases_plot.png" width=500>
 
